@@ -27,8 +27,6 @@ body {
   height: 40vh;
   background-image: url(assets/images/background-pattern-desktop.svg);
   z-index: 0;
-  /* border-bottom-left-radius: 80px;
-  border-bottom-right-radius: 80px; */
   overflow: hidden;
 }
 .background::before {
@@ -74,7 +72,6 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  /* background: var(--faq-icon-bg); */
   color: var(--text-secondary);
   font-size: 2rem;
   border-radius: 50%;
@@ -139,7 +136,6 @@ body {
   height: 28px;
   font-weight: bold;
   margin-left: 16px;
-  padding: 2px;
   transition: background 0.2s, color 0.2s;
 }
 
@@ -233,17 +229,3 @@ body {
   }
 
 }
-
-/* .attribution {
-  font-size: 0.9rem;
-  text-align: center;
-  margin: 32px auto 0 auto;
-  color: var(--text-secondary);
-}
-.attribution a {
-  color: var(--primary);
-  text-decoration: none;
-}
-.attribution a:hover {
-  text-decoration: underline;
-} */

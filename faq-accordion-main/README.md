@@ -22,7 +22,14 @@ This project is a simple FAQ accordion card. Users can click on each question to
 
 ## Screenshot
 
-![FAQ Accordion Screenshot](./screenshot.png)
+![Desktop Screenshot](screenshots/desktop-view.png)
+![Mobile Screenshot](screenshots/mobile-view.png)
+![Tablet Screenshot](screenshots/tablet-view.png)
+
+## Links
+
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)
+- [Live Site](https://faq-accordion-livid-three.vercel.app/)
 
 ## Built With
 
@@ -82,7 +89,7 @@ faq-accordion-main/
 ## Attribution
 
 Challenge by [Frontend Mentor](https://www.frontendmentor.io?ref=challenge).  
-Coded by [Your Name Here](#).
+Coded by [Mhista Fortune](#).
 
 ---
 
