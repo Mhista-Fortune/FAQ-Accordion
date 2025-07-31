@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frontend Mentor | FAQ Accordion</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background"></div>
+  <main class="faq-container">
+    <div class="faq-header">
+      <span class="faq-icon">✦</span>
+      <h1>FAQs</h1>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-question" aria-expanded="true">
+          What is Frontend Mentor, and how will it help me?
+          <span class="faq-toggle">−</span>
+        </button>
+        <div class="faq-answer">
+          Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It’s suitable for all levels and ideal for portfolio building.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Is Frontend Mentor free?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          Yes, Frontend Mentor offers both free and premium challenges, so you can choose according to your needs.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can I use Frontend Mentor projects in my portfolio?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          Yes, you can use projects you complete on Frontend Mentor in your portfolio. It’s a great way to showcase your skills!
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How can I get help if I'm stuck on a challenge?
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-answer">
+          The Frontend Mentor community is very active. You can ask questions on the Discord server or in the solution discussions.
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Mhista Fortune</a>.
+  </div>
+  <script>
+    // Simple accordion functionality
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const item = btn.parentElement;
+        const open = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          i.querySelector('.faq-toggle').textContent = '+';
+        });
+        if (!open) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          btn.querySelector('.faq-toggle').textContent = '−';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
